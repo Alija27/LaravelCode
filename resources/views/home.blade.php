@@ -13,4 +13,15 @@
    @unless ($name=="Viewer")
        {{"Name is not Viewer"}} ok
    @endunless
+
+   @isset($name)
+   Welcome name
+       
+   @endisset
+   @for($i=1;$i <=10 ;$i++)
+   @if($i=="1")
+   @continue
+   @endif
+   {{$i}}
+   @endfor
 </h1>
