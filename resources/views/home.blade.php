@@ -9,4 +9,8 @@
        {{"Name is incorrect"}}
        
    @endif
-</h1>ok
+
+   @unless ($name=="Viewer")
+       {{"Name is not Viewer"}} ok
+   @endunless
+</h1>
