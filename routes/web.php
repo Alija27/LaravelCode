@@ -22,3 +22,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\DemoController::class, 'index']);
 Route::get('/courses', App\Http\Controllers\SingleActionController::class);
 Route::resource('/photo', App\Http\Controlllers\PhotoController::class);
+Route::get('/register', [App\Http\Controllers\RegistrationController::class, 'index']);
+Route::post('/register', [App\Http\Controllers\RegistrationController::class, 'register']);
