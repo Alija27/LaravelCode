@@ -4,14 +4,14 @@
 <form action="{{url("/register")}}" method="post">
     @csrf
     <label>Name</label> <br>
-    <input type="text" name="name" placeholder="Name"/> <br>
+    <input type="text" name="name" placeholder="Name" value="{{old('name')}}"/> <br>
     <span>  @error('name')
         {{$message}}
         @enderror</span>
    
     <br> <br>
     <label>Email</label><br>
-    <input type="email" name="email" placeholder="Email"/><br>
+    <input type="email" name="email" placeholder="Email" value="{{old('email')}}"/><br>
     <span>  @error('email')
         {{$message}}
         @enderror</span><br><br>
