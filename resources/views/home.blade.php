@@ -1,9 +1,9 @@
 
 @extends('layouts.main') @push('title')
 <title>Home</title>
-@endpush @section('main-section')<h1>
+@endpush @section('main-section'){{-- <h1>
     Welcome Home {{$name ?? "Viewer"}}
-   {{--  Wlcome Home {!!$demo!!} --}}
+    Wlcome Home {!!$demo!!} 
    @if ($name=="")
       {{ "Name is empty"}}
        @elseif ($name=="Viewer")
@@ -27,6 +27,7 @@
    @endif
    {{$i}}
    @endfor
-</h1>
+</h1> --}}
+Home
 
 @endsection
